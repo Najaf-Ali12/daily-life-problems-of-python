@@ -13,7 +13,7 @@ def home(): #function will bring player in game
     else:
         print(choice,"is  not included in your home")
 def hospital(): #function defines entire environment of hospital 
-    choice=input(name,"enter what services can you provide in hospital,(be nurse,be ambulance driver)")
+    choice=input(f"{name} tell what services can you provide in hospital,(be nurse,be ambulance driver)")
     if choice=="be nurse":
         print(name,"a patient needs your help in room 18,go and take his care")
     elif choice=="be ambulance driver":
@@ -21,7 +21,7 @@ def hospital(): #function defines entire environment of hospital
     else:
         print(choice," is not available at the moment")
 def car(): #function defines entire environment of car and directions
-    choice=input(f"{name} where you want to go,left or right")
+    choice=input(f"{name} tell where you want to go,left or right")
     if choice=="left":
         print("oh no,the car is going into the water")
     elif choice=="right":
@@ -53,8 +53,8 @@ while True:
     print("2:hospital")
     print("3:car")
     print("4:fight")
-    print("5:exit")
-    choice=input("what do you want to do?,(enter 1,2,3,4,5)")
+    print("5:exit game")
+    choice=input("what do you want to do?,(enter 1,2,3,4, or 5)")
     if choice=="1":#take to function of home
         home()
     elif choice=="2": #take to function of hospital
